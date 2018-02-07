@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+<script src="./js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <p v-if="seen">现在你看到我了</p>
+    <div v-if="ok">
+      <h1>菜鸟教程</h1>
+      <p>学的不仅是技术，更是梦想！</p>
+      <p>哈哈哈，打字辛苦啊！！！</p>
+    </div>
+</div>
+<div id="con">
+    <a v-bind:href="url"> python </a>
+
+</div>
+<script>
+new Vue({
+  el: '#con',
+  data: {
+    seen: true,
+    ok: true,
+      url:'www.itcast.com',
+  }
+})
+</script>
+</body>
+</html>

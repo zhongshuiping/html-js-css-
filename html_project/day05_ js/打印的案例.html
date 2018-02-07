@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网页换肤</title>
+    <link rel="stylesheet" type="text/css" href="css/main02.css">
+
+    <script type="text/javascript">
+        window.onload = function () {
+            input01 = document.getElementById('input01');
+            input02 = document.getElementById('input02');
+            input03 = document.getElementById('input03');
+            input04 = document.getElementById('input04');
+            input05 = document.getElementById('input05');
+            input06 = document.getElementById('input06');
+            input07 = document.getElementById('input07');
+
+            setcard = document.getElementById('setcard');
+
+            card_wrap = document.getElementById('card_wrap');
+
+
+            setcard.onclick = function(){
+                 if(input01.value==''|| input02.value==''|| input03.value==''|| input04.value==''|| input05.value==''|| input06.value=='' ){
+                alert('输入不能为空')
+                     return
+                }
+
+            card_wrap.innerHTML = '<div class="p01">'+input01.value+
+                    '<em>'+input02.value+'</em>'+
+                '</div>'+
+                '<div class="p02">'+
+                    '<p class="company">'+input03.value+'</p>'+
+                    '<p>手机：'+input04.value+'</p>'+
+                    '<p>email：'+input05.value+'</p>'+
+                    '<p>地址：'+input06.value+'</p>' +
+                    '</div>' +
+                    '</div>'
+                alert(input07.value)
+                card_wrap.className = 'idcard0'+(parseInt(input07.value)+1)
+
+            };
+
+
+        };
+
+    </script>
+
+
+</head>
+
+<body>
+    <div class="set_con">
+        <div class="left_set">
+            <label>姓名：</label>
+            <input type="text" id="input01">
+            <label>职位：</label>
+            <input type="text" id="input02">
+            <label>公司名称：</label>
+            <input type="text" id="input03">
+            <label>手机：</label>
+            <input type="text" id="input04">
+            <label>email：</label>
+            <input type="text" id="input05">
+            <label>地址：</label>
+            <input type="text" id="input06">
+            <label>风格：</label>
+            <select id="input07">
+                <option value="0">风格一</option>
+                <option value="1">风格二</option>
+                <option value="2">风格三</option>
+            </select>
+            <input type="button" value="设 置" class="setbtn" id="setcard">
+        </div>
+        <div class="right_show">
+            <div class="idcard02" id="card_wrap">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

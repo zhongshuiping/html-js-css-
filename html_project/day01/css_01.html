@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 外链式写法 -->
+    <!--<link rel="stylesheet" href="#">-->
+
+    <!-- 嵌入式的写法   渲染速度快 -->
+    <style>
+        <!-- 标签选择器  覆盖当前网页中所有标签统一的样式 -->
+        /*div{*/
+            /*color: red;*/
+            /*background: blue;*/
+        /*}*/
+        /*!* 类选择器 *!*/
+        /*.box{*/
+            /*color: blue;*/
+            /*background: red;*/
+        /*}*/
+        /*!* 层级选择器 *!*/
+        div p{
+            color: yellow;
+            background: red;
+            /* 字体大小 像素 */
+            font-size: 30px;
+            /* 字体 */
+            font-family: "Microsoft YaHei UI";
+            /* 行高 加大文字的间距  文字垂直居中*/
+            line-height: 40px;
+            /* 宽度 高度 */
+            width: 200px;
+            height: 300px;
+            /* 设置边框 线粗细  solid边框的颜色 */
+            border: 10px solid black;
+            /* 移动div里面的div */
+            margin-left: 10px;
+            margin-top: 10px;
+            /*  上 右 下 左  */
+            margin: 10px 20px 30px 40px;
+            /* 元素在网页上显示的真实大小 不光有weidth heigth 内边距和外边距也会影响
+            所以尽量不要内边距
+            */
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- 行内写法不推荐使用 -->
+<!--<div style="color: red;background: yellow">-->
+    <!--my name is div-->
+<!--</div>-->
+
+<div class="box">
+    <p>my name in css</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/css02.css" id="link">
+    <script type="text/javascript">
+        window.onload = function () {
+            tn1 = document.getElementById('tn1');
+            tn2 = document.getElementById('tn2');
+            lin = document.getElementById('link');
+
+            tn1.onclick=function () {
+
+                lin.href = './css/css02.css'
+
+            };
+            tn2.onclick=function () {
+                lin.href = './css/css01.css'
+            };
+        };
+
+    </script>
+</head>
+<body>
+<div class="tn1" id="tn1">红色</div>
+<div class="tn2" id="tn2"> 金黄色</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js中的变量命名</title>
+    <script type="text/javascript">
+//        <!--
+//        ==, ===, >,<,<=,>=,!=,,&&,||,!,
+//        -->
+//内置对象document document.getElementById()
+        var iNum = 1
+        var iNun = 2
+        if (iNum>iNun){
+            alert('好')
+        }else if (iNum>10){
+            alert('不好')
+        }else {
+            alert('不知道好不好咯')
+        }
+//        在js中==比较运算符不管他是什么类型的，他会把左右二边的类型转化为相同类型
+//        自动转化 专业名称 隐士转化
+//    && 一假则假，只有其中一个条件不成立就不成立
+//        || 一真就成立，一真就为真
+//        ！取反  非0就为真
+
+        window.onload = function () {
+            alert('窗口加载完毕后执行咯')
+        }
+
+
+
+    </script>
+</head>
+<body>
+<div id="tn">adgdn</div>
+</body>
+<script type="text/javascript">
+    var id = document.getElementById('tn');
+//    给便签添加css样式需要用到 属性style
+        id.style.color='red'
+</script>
+</html>

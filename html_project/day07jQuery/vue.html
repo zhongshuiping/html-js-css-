@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+<script src="./js/vue.min.js"></script>
+</head>
+<body>
+<div id="app1">
+  <p>{{ message }}</p>
+    <div v-html="html"></div>
+    {{5+5}}<br>
+    {{ok ? 'yes' : 'no'}}<br>
+    {{ message.split('').reverse().join('') }}
+    <div v-bind:id="'list-' + id">python</div>
+</div>
+
+<script>
+new Vue({
+  el: '#app1',
+  data: {
+      message: 'Hello Vue.js!',
+      html:'<h1>菜鸟教程</h1>',
+      ok:true,
+      id :1
+  }
+});
+
+</script>
+</body>
+</html>
